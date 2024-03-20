@@ -11,8 +11,10 @@ function App() {
           <video autoPlay muted loop id="myVideo">
             <source src={backgroundVideo} type="video/mp4"/>
           </video>
-          <p>FILMING IN ALBERTA, CANADA</p>
-          <p>MAKING MEMORIES LAST FOREVER</p>
+          <div className="title">
+            <p>FILMING IN ALBERTA, CANADA</p>
+            <p className="bigger">MAKING MEMORIES LAST FOREVER</p>
+          </div>
           <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">CORPORATIONS</a></li>
@@ -25,6 +27,7 @@ function App() {
       </header>
       <main>
         <p>
+          YOU NEED TO
         </p>
       </main>
       <footer>
