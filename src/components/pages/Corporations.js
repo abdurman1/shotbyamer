@@ -1,6 +1,14 @@
 import React from 'react'
 import '../../App.css'
+import Navbar from '../navbar'
+import HeroSection from '../HeroSection';
 
 export default function Corportations () {
-    return <h1 className='corporations'>CORPORATIONS</h1>
+    return (
+        <>
+          <HeroSection/>
+          {/* Other components unique to Home page */}
+        </>
+      );
+    
 }

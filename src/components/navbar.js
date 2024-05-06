@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './navbar.css';
+import {Link} from 'react-router-dom';
 
 function navbar() {
   return (
@@ -12,22 +13,34 @@ function navbar() {
                     <p className="bigger">MAKING MEMORIES LAST FOREVER</p>
                 </div>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="./firstPg.js">CORPORATIONS</a></li>
-                    <li><a href="#">WEDDINGS</a></li>
-                    <li><a href="#">SPORTS</a></li>
-                    <li><a href="#">CONCERTS</a></li>
+                    <li>
+                        <Link to='/'>
+                            HOME
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/corporations'>
+                            CORPORATIONS
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/weddings'>
+                            WEDDINGS
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/sports'>
+                            SPORTS
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to='/concerts'>
+                            CONCERTS
+                        </Link>
+                    </li>
                 </ul>
                 </nav>
             </header>
-            <main>
-                <p>
-                
-                </p>
-            </main>
-            <footer>
-
-            </footer>
         </body>
     </div>
   )

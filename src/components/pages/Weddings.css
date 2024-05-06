@@ -1,0 +1,27 @@
+.weddings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.wedding-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.wedding-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.wedding-item:hover img {
+    transform: scale(1.1);
+}
+
+.page-title {
+    color: rgb(194, 179, 94);
+    margin-top: -5rem;  
+}

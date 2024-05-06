@@ -1,6 +1,13 @@
 import React from 'react'
 import '../../App.css'
+import HeroSection from '../HeroSection';
+
 
 export default function Sports () {
-    return <h1 className='Sports'>Sports</h1>
+    return (
+        <>
+          <HeroSection/>
+          {/* Other components unique to Home page */}
+        </>
+      );
 }

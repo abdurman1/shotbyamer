@@ -1,6 +1,12 @@
 import React from 'react'
 import '../../App.css'
+import HeroSection from '../HeroSection';
 
 export default function Concerts () {
-    return <h1 className='concerts'>CONCERTS</h1>
+    return (
+        <>
+          <HeroSection/>
+          
+        </>
+      );
 }

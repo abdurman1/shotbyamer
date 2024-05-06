@@ -7,18 +7,20 @@ import Concerts from './components/pages/Concerts'
 import Sports from './components/pages/Sports'
 import Weddings from './components/pages/Weddings'
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <switch>
-        <Route path='/' exact component= {Home}/>
-        <Route path='/corporations' exact component= {Corporations}/>
-        <Route path='/concerts' exact component= {Concerts}/>
-        <Route path='/sports' exact component= {Sports}/>
-        <Route path='/Weddings' exact component= {Weddings}/>
-      </switch>
-    </div>
+    <Router>
+      
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/corporations' element={<Corporations />} />
+        <Route path='/concerts' element={<Concerts />} />
+        <Route path='/sports' element={<Sports />} />
+        <Route path='/weddings' element={<Weddings />} />
+      </Routes>
+    </Router>
   );
 }
 

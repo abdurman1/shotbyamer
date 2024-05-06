@@ -1,0 +1,14 @@
+.react-compare-image {
+    max-width: 800px; 
+    margin: auto;
+    border-radius: 10px;
+} 
+
+.some-of-our-work-heading {
+    text-align: Left;
+    margin-top: -10rem;
+    margin-bottom: 5rem;
+    font-size: 3rem; /* Optional: Adjust font size as needed */
+    color: rgb(194, 179, 94);
+}
+
