@@ -1,0 +1,24 @@
+.footer {
+    margin-top: 10rem;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links a {
+    margin: 2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-links p {
+    margin-top: 5rem;
+}

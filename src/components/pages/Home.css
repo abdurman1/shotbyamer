@@ -1,14 +1,61 @@
-.react-compare-image {
-    max-width: 800px; 
-    margin: auto;
-    border-radius: 10px;
-} 
+/* Home.css */
+.image-slider-container {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;  /* Adjust width as necessary */
+    padding: 20px;
+}
 
 .some-of-our-work-heading {
-    text-align: Left;
-    margin-top: -10rem;
+    text-align: center;
+    margin-top: -15rem;
     margin-bottom: 5rem;
-    font-size: 3rem; /* Optional: Adjust font size as needed */
+    font-size: 2rem; 
     color: rgb(194, 179, 94);
 }
 
+.zigzag-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12rem 8rem;
+}
+
+.zigzag-item {
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.zigzag-item img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.zigzag-item p {
+    width: 50%;
+    padding: 10px;
+    color: #fff;
+}
+
+.zigzag-item .reverse {
+    flex-direction: row-reverse;
+}
+
+.slick-slide {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+    transform: scale(0.9); /* Scaled down by default */
+    opacity: 0.5; 
+  }
+  
+  .slick-center {
+    transform: scale(0.9); /* Only the center slide is scaled up */
+    opacity: 1;  
+  }
+
+  
+  
+  
