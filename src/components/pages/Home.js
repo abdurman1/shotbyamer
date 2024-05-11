@@ -19,71 +19,82 @@ function Home() {
         centerMode: true,
         focusOnSelect: true,
         centerPadding: '0px',
-        className: 'slider variable-width'
+        className: 'slider-variable-width'
       };
       
 
     return (
         <>
             <HeroSection />
-            <div style={{ padding: '20px' }} className='image-slider-container'>
+            <div className='image-slider-container'>
                 <h2 className="some-of-our-work-heading">SOME OF OUR WORK</h2>
-                <Slider {...settings}>
-                    <div>
-                        <ReactCompareImage
-                            leftImage="/images/LZB02554-Edit.jpg"
-                            rightImage="/images/LZB02554-Edit (1).jpg"
-                            leftImageAlt="Before"
-                            rightImageAlt="After"
-                        />
-                    </div>
-                    <div>
-                        <ReactCompareImage
-                            leftImage="/images/LZB02554-Edit.jpg"
-                            rightImage="/images/LZB02554-Edit (1).jpg"
-                            leftImageAlt="Before"
-                            rightImageAlt="After"
-                        />
-                    </div>
-                    <div>
-                        <ReactCompareImage
-                            leftImage="/images/nav.jpg"
-                            rightImage="/images/nav-edit-2.jpg"
-                            leftImageAlt="Before"
-                            rightImageAlt="After"
-                        />
-                    </div>
-                    <div>
-                        <ReactCompareImage
-                            leftImage="/images/nav.jpg"
-                            rightImage="/images/nav-edit-2.jpg"
-                            leftImageAlt="Before"
-                            rightImageAlt="After"
-                        />
-                    </div>
-                    {/* Add more slides as needed */}
-                </Slider>
-            </div>
+                    <Slider {...settings}>
+                        <div className='carousel-img'>
+                            <ReactCompareImage
+                                leftImage="/images/LZB02554-Edit.jpg"
+                                rightImage="/images/LZB02554-Edit (1).jpg"
+                                leftImageAlt="Before"
+                                rightImageAlt="After"
+                            />
+                        </div>
+                        <div className='carousel-img'>
+                            <ReactCompareImage
+                                leftImage="/images/LZB02554-Edit.jpg"
+                                rightImage="/images/LZB02554-Edit (1).jpg"
+                                leftImageAlt="Before"
+                                rightImageAlt="After"
+                            />
+                        </div>
+                        <div className='carousel-img'>
+                            <ReactCompareImage
+                                leftImage="/images/nav.jpg"
+                                rightImage="/images/nav-edit-2.jpg"
+                                leftImageAlt="Before"
+                                rightImageAlt="After"
+                            />
+                        </div>
+                        <div className='carousel-img'>
+                            <ReactCompareImage
+                                leftImage="/images/nav.jpg"
+                                rightImage="/images/nav-edit-2.jpg"
+                                leftImageAlt="Before"
+                                rightImageAlt="After"
+                            />
+                        </div>
+                        {/* Add more slides as needed */}
+                    </Slider>
+                </div>
             <div className="zigzag-layout">
                 <div className="zigzag-item">
-                    <img src="/images/nav.jpg" alt="Sample Image 1" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <img src="/images/nav.jpg" alt="Sample Image 4" />
+                    <div>
+                        <h3>CORPORATIONS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="/corporations" className="view-more-link">View More</a>
+                    </div>
                 </div>
                 <div className="zigzag-item reverse">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div>
+                        <h3>WEDDINGS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="/weddings" className="view-more-link">View More</a>
+                    </div>                    
                     <img src="/images/nav.jpg" alt="Sample Image 2" />
                 </div>
                 <div className="zigzag-item">
                     <img src="/images/nav.jpg" alt="Sample Image 3" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
+                    <div>
+                        <h3>SPORTS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="/sports" className="view-more-link">View More</a>
+                    </div>                </div>
                 <div className="zigzag-item reverse">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div>
+                        <h3>CONCERTS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="/corporations" className="view-more-link">View More</a>
+                    </div>                    
                     <img src="/images/nav.jpg" alt="Sample Image 4" />
-                </div>
-                <div className="zigzag-item">
-                    <img src="/images/nav.jpg" alt="Sample Image 5" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
             <Footer />

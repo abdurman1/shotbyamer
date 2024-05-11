@@ -1,24 +1,79 @@
 .footer {
-    margin-top: 10rem;
-    color: #fff;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.social-links {
+    margin-bottom: 2rem;
 }
 
 .social-links a {
-    margin: 2rem;
-    text-decoration: none;
+    padding: 20px;
     color: #fff;
+    text-decoration: none;
 }
 
 .social-links img {
-    width: 30px;
-    height: 30px;
+    margin: 0 10px;
+    width: 100px;
+    height: 100px;
 }
 
-.social-links p {
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;  /* Responsive width */
+    box-sizing: border-box;  /* Includes padding in the width */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: rgb(194, 179, 94); /* Stylish green background */
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+}
+
+.footer > p {
     margin-top: 5rem;
 }
+
+.contact-us {
+    color:rgb(194, 179, 94);
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.contact-form {
+    width: 80%;  /* Adjusts the width to cover most of the screen */
+    max-width: 960px;  /* Sets a maximum width to ensure it doesn't get too wide on larger screens */
+    margin: 0 auto;  /* Centers the form horizontally */
+    padding: 20px;  /* Adds some padding inside the form */
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: 100%;  /* Makes input fields and button take up 100% of their container's width */
+    padding: 10px;  /* Adds padding for better text visibility and touch interaction */
+    margin-bottom: 10px;  /* Adds space between each form element */
+}
+
+.contact-form textarea {
+    height: 200px;
+}
+
+

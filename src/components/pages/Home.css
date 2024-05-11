@@ -1,16 +1,23 @@
-/* Home.css */
 .image-slider-container {
     margin: 0 auto;
-    width: 80%;
-    height: auto;  /* Adjust width as necessary */
+    width: 100%;
+    height: auto;  
     padding: 20px;
+    position: relative;
+}
+
+.carousel-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
 }
 
 .some-of-our-work-heading {
     text-align: center;
-    margin-top: -15rem;
+    margin-top: -28rem;
     margin-bottom: 5rem;
-    font-size: 2rem; 
+    font-size: 3rem; 
     color: rgb(194, 179, 94);
 }
 
@@ -18,26 +25,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 12rem 8rem;
+    margin: 10rem 2rem;
 }
 
 .zigzag-item {
     display: flex;
     width: 100%;
-    margin-top: 3rem;
     align-items: center;
     justify-content: space-between;
+    margin-top: 5rem;
 }
 
 .zigzag-item img {
-    width: 40%;
+    width: 50%;
     height: auto;
     border-radius: 10px;
 }
 
 .zigzag-item p {
-    width: 50%;
-    padding: 10px;
+    width: 100%;
+    padding: 1rem;
     color: #fff;
 }
 
@@ -46,16 +53,41 @@
 }
 
 .slick-slide {
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
-    transform: scale(0.9); /* Scaled down by default */
-    opacity: 0.5; 
-  }
-  
-  .slick-center {
-    transform: scale(0.9); /* Only the center slide is scaled up */
-    opacity: 1;  
-  }
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+    transform: scale(0.9); 
+    opacity: 0.2; 
+}
 
-  
+.slick-center {
+    transform: scale(1);
+    opacity: 1;  
+}
+
+.zigzag-item video {
+    max-width: 40%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+
+.zigzag-item h3 {
+    font-size: 2.25em; /* Adjust font size as needed */
+    color: #fff; /* Adjust color as needed */
+    padding: 1rem;
+    margin-bottom: 10rem; /* Space between the heading and the paragraph */
+}
+
+.view-more-link {
+    font-weight: 900;
+    display: inline-block; /* Makes the link align nicely with text */
+    margin:  2rem 1rem; /* Space between the paragraph and the link */
+    color: #fff; /* Example blue color for links */
+    text-decoration: none; /* Optional: removes underline */
+}
+
+.view-more-link:hover {
+    text-decoration: underline; /* Adds underline on hover for better UX */
+}
+
   
   

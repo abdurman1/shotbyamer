@@ -1,19 +1,65 @@
-import React from 'react';
-import './Footer.css';  // Ensure to create and link this CSS file for styling
+import React, { useState } from 'react';
+import './Footer.css';
 
 const Footer = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await fetch('http://localhost:3001/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, message })
+            });
+            const responseData = await response.text();
+            alert('Message sent: ' + responseData);  // Show a simple alert on success/failure
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Failed to send message');
+        }
+    };
+
     return (
         <footer className="footer">
             <div className="social-links">
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                    <img src="/icons/instagram.png" alt="Instagram" />
+                <a href="https://www.instagram.com/shotbyamer" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/instagram.png" alt="Instagram" />
                 </a>
-                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-                    <img src="/icons/twitter.png" alt="Twitter" />
-                </a>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                    <img src="/icons/facebook.png" alt="Facebook" />
-                </a>
+            </div>
+            <div className='contact-us'>
+                <p>
+                    Email Contact
+                </p>
+            </div>
+            <div className="contact-form">
+                <form onSubmit={handleSubmit}>
+                    <input
+                        type="text"
+                        value={name}
+                        onChange={e => setName(e.target.value)}
+                        placeholder="Name"
+                        required
+                    />
+                    <input
+                        type="email"
+                        value={email}
+                        onChange={e => setEmail(e.target.value)}
+                        placeholder="Email"
+                        required
+                    />
+                    <textarea
+                        value={message}
+                        onChange={e => setMessage(e.target.value)}
+                        placeholder="Message"
+                        required
+                    />
+                    <button type="submit">Send</button>
+                </form>
             </div>
             <p>© 2024 ShotByAmer. All rights reserved.</p>
         </footer>
@@ -21,3 +67,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
