@@ -17,7 +17,7 @@ const Footer = () => {
                 body: JSON.stringify({ name, email, message })
             });
             const responseData = await response.text();
-            alert('Message sent: ' + responseData);  // Show a simple alert on success/failure
+            alert('Message sent: ' + responseData);
         } catch (error) {
             console.error('Error:', error);
             alert('Failed to send message');
@@ -44,6 +44,7 @@ const Footer = () => {
                         onChange={e => setName(e.target.value)}
                         placeholder="Name"
                         required
+                        id='name'
                     />
                     <input
                         type="email"
@@ -51,12 +52,14 @@ const Footer = () => {
                         onChange={e => setEmail(e.target.value)}
                         placeholder="Email"
                         required
+                        id='email'
                     />
                     <textarea
                         value={message}
                         onChange={e => setMessage(e.target.value)}
                         placeholder="Message"
                         required
+                        id='message'
                     />
                     <button type="submit">Send</button>
                 </form>
