@@ -30,7 +30,7 @@ function navbar() {
                     </li>
                     <li>
                         <Link to='/sports'>
-                            SPORTS
+                            ATHLETICS
                         </Link>
                     </li>
                     <li>

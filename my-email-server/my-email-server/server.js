@@ -18,12 +18,12 @@ app.post('/send-email', (req, res) => {
     const { name, email, message } = req.body;
     const mailOptions = {
         from: email,
-        to: 'your-personal-email@example.com',
+        to: 'aabuoun9@gmail.com',
         subject: `New Inquiry from ${name}`,
         text: `You have received a new inquiry from:
-Name: ${name}
-Email: ${email}
-Message: ${message}`
+        Name: ${name}
+        Email: ${email}
+        Message: ${message}`
     };
 
     transporter.sendMail(mailOptions, function(error, info){
@@ -40,3 +40,5 @@ Message: ${message}`
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+
+

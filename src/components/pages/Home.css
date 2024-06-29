@@ -1,3 +1,10 @@
+h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -4px;
+    margin-top: 15rem;
+}
 .image-slider-container {
     margin: 0 auto;
     width: 100%;
@@ -19,42 +26,48 @@
     margin-bottom: 5rem;
     font-size: 3rem; 
     color: rgb(194, 179, 94);
+    letter-spacing: -4px;
 }
 
 .zigzag-layout {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10rem 2rem;
+    margin: 5rem 0rem;
+    background-color: #1a1a1a;
 }
 
 .zigzag-item {
-    display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5rem;
+    margin: auto;
+}
+
+.zigzag-item video {
+    width: 100%;
+}
+
+.zigzag-item div {
+    width: 100%;
+    height: auto;
 }
 
 .zigzag-item img {
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
+    width: 46%;
+    margin: auto;
+    height: auto;    
 }
 
-.zigzag-item p {
+.zigzag-item h3 {
     width: 100%;
-    padding: 1rem;
     color: #fff;
-}
-
-.zigzag-item .reverse {
-    flex-direction: row-reverse;
+    padding: 5rem 2rem;
+    text-align: center;
 }
 
 .slick-slide {
     transition: transform 0.3s ease, opacity 0.3s ease; 
-    transform: scale(0.9); 
+    transform: scale(1); 
     opacity: 0.2; 
 }
 
@@ -63,31 +76,135 @@
     opacity: 1;  
 }
 
-.zigzag-item video {
-    max-width: 40%; 
-    height: auto; 
-    border-radius: 10px; 
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+.video-player {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+}
+  
+.play-button {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.recent-projects-section {
+    width: 100%;
+    color: #fff; 
+    padding: 10rem 0;
+    font-size: 2rem;
+    letter-spacing: -3px;
+}
+
+.recent-projects-video {
+    padding: 2rem 0;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease-in-out;
+}
+
+.recent-projects-video:hover {
+    transform: scale(.9); /* Scales the video up by 5% on hover */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.video-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    background: #000;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.close {
+    background-color: transparent;
+    color: #fff;
+    border: #000;
+}
+
+.recent-projects-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-link {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;  
+    text-decoration: none; 
+    vertical-align: top; 
+    font-size: 1rem;
+    letter-spacing: 0px;
+}
+
+.original-text, .hover-text {
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(0);
+    width: 100%;
+}
+
+.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+.hover-link:hover .original-text {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.hover-link:hover .hover-text {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 
-.zigzag-item h3 {
-    font-size: 2.25em; /* Adjust font size as needed */
-    color: #fff; /* Adjust color as needed */
-    padding: 1rem;
-    margin-bottom: 10rem; /* Space between the heading and the paragraph */
-}
 
-.view-more-link {
-    font-weight: 900;
-    display: inline-block; /* Makes the link align nicely with text */
-    margin:  2rem 1rem; /* Space between the paragraph and the link */
-    color: #fff; /* Example blue color for links */
-    text-decoration: none; /* Optional: removes underline */
-}
 
-.view-more-link:hover {
-    text-decoration: underline; /* Adds underline on hover for better UX */
-}
+  
+  
+
+
+
+
+
+
 
   
   

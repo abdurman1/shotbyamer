@@ -11,7 +11,7 @@ export default function Sports() {
         <>
             <HeroSection />
             <div className="weddings-container">
-                <h1 className="page-title">SPORTS</h1>
+                <h1 className="page-title">ATHLETICS</h1>
                 <div className="weddings-grid">
                     <div className="wedding-item"><img src="/images/nav.jpg" alt="Wedding Scene"/></div>
                     <div className="wedding-item"><img src="/images/LZB02554-Edit.jpg" alt="Wedding Scene"/></div>

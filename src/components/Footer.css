@@ -58,7 +58,7 @@
 }
 
 .contact-form {
-    width: 80%;  /* Adjusts the width to cover most of the screen */
+    width: 95%;  /* Adjusts the width to cover most of the screen */
     max-width: 960px;  /* Sets a maximum width to ensure it doesn't get too wide on larger screens */
     margin: 0 auto;  /* Centers the form horizontally */
     padding: 20px;  /* Adds some padding inside the form */
