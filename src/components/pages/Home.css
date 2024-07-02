@@ -4,14 +4,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;  /* Center the container horizontally */
+    margin: auto;
+    width: 100%;  /* Ensure the container takes the full width */
 }
 
-.carousel-img img,
-.carousel-img video {
-    width: auto; /* Adjust width to auto */
-    height: 100%; /* Set height to 100% */
-    object-fit: contain; /* Ensures the entire content is shown within the container */
+.carousel-img img {
+    width: 100%;  /* Ensure the media takes the full width of the container */
+    height: 100px;  /* Ensure the media takes the full height of the container */
+    object-fit: cover;  /* This will crop the image to fit the container without stretching */
     display: block;
     transition: transform 0.3s ease;
 }

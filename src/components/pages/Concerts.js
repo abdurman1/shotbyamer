@@ -22,8 +22,6 @@ export default function Weddings() {
             <div className="content-container">
                 <h1 className="page-title">CONCERTS</h1>
                 <div className="weddings-grid">
-                    <div className="wedding-item"><video src="/concerts/1. PRESSSA - DREAMERS Concert (2).mp4" autoPlay loop muted/></div>
-                    <div className="wedding-item"><video src="/concerts/2. Gyptian - Moonlight Nightclub (2).mp4" autoPlay loop muted/></div>
                     <div className="wedding-item"><img src="/concerts/nav.jpg" alt="Wedding Scene"/></div>
                     <div className="wedding-item"><img src="/concerts/4HB5v6WQ-2.jpg" alt="Wedding Scene"/></div>
                     <div className="wedding-item"><img src="/concerts/Bundog.jpg" alt="Wedding Scene"/></div>

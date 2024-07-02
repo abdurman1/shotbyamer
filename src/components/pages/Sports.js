@@ -23,7 +23,6 @@ export default function Weddings() {
                 <h1 className="page-title">ATHLETICS</h1>
                 <div className="weddings-grid">
                     <div className="wedding-item"><video src="/athletics/Export WO1 T4.mp4" autoPlay loop muted/></div>
-                    <div className="wedding-item"><video src="/athletics/1) Dinos - Mixtape (2).mp4" autoPlay loop muted/></div>
                     <div className="wedding-item"><video src="/athletics/4) Dinos - Short IG Reel .mp4" autoPlay loop muted/></div>
                     <div className="wedding-item"><img src="/athletics/bball.jpg" alt="Wedding Scene"/></div>
                     <div className="wedding-item"><video src="/athletics/5) Dinos VS MRU Short IG Reel.mp4" autoPlay loop muted/></div>
