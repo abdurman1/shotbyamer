@@ -1,3 +1,27 @@
+.carousel-img {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;  /* Center the container horizontally */
+}
+
+.carousel-img img,
+.carousel-img video {
+    width: auto; /* Adjust width to auto */
+    height: 100%; /* Set height to 100% */
+    object-fit: contain; /* Ensures the entire content is shown within the container */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.carousel-img:hover img,
+.carousel-img:hover video {
+    transform: scale(1.1);
+}
+
+
 h1 {
     font-size: 4rem;
     color: #fff;
@@ -61,7 +85,7 @@ h1 {
 .zigzag-item h3 {
     width: 100%;
     color: #fff;
-    padding: 5rem 2rem;
+    padding: 8rem 3rem 0rem 3rem;
     text-align: center;
 }
 
@@ -70,6 +94,7 @@ h1 {
     transform: scale(1); 
     opacity: 0.2; 
 }
+
 
 .slick-center {
     transform: scale(1);
@@ -221,6 +246,9 @@ a {
     .recent-projects-text {
         padding: 20px;
         text-align: center;
+    }
+    .image-slider-container .some-of-our-work-heading {
+        padding-top: 20rem;
     }
 }
 

@@ -71,24 +71,56 @@ function Home() {
                     </div>
                     <div className='carousel-img'>
                         <ReactCompareImage
-                            leftImage="/images/LZB02554-Edit.jpg"
-                            rightImage="/images/LZB02554-Edit (1).jpg"
+                            leftImage="/images/wed-before.jpg"
+                            rightImage="/images/wed-after.jpg"
                             leftImageAlt="Before"
                             rightImageAlt="After"
                         />
                     </div>
                     <div className='carousel-img'>
                         <ReactCompareImage
-                            leftImage="/images/nav.jpg"
-                            rightImage="/images/nav-edit-2.jpg"
+                            leftImage="/images/50-before.jpg"
+                            rightImage="/images/50-after.jpg"
                             leftImageAlt="Before"
                             rightImageAlt="After"
                         />
                     </div>
                     <div className='carousel-img'>
                         <ReactCompareImage
-                            leftImage="/images/nav.jpg"
-                            rightImage="/images/nav-edit-2.jpg"
+                            leftImage="/images/dino-before.jpg"
+                            rightImage="/images/dino-after.jpg"
+                            leftImageAlt="Before"
+                            rightImageAlt="After"
+                        />
+                    </div>
+                    <div className='carousel-img'>
+                        <ReactCompareImage
+                            leftImage="/images/cent-before.jpg"
+                            rightImage="/images/cent-after.jpg"
+                            leftImageAlt="Before"
+                            rightImageAlt="After"
+                        />
+                    </div>
+                    <div className='carousel-img'>
+                        <ReactCompareImage
+                            leftImage="/images/wed2-before.jpg"
+                            rightImage="/images/wed2-after.jpg"
+                            leftImageAlt="Before"
+                            rightImageAlt="After"
+                        />
+                    </div>
+                    <div className='carousel-img'>
+                        <ReactCompareImage
+                            leftImage="/images/shoe-before.jpg"
+                            rightImage="/images/shoe-after.jpg"
+                            leftImageAlt="Before"
+                            rightImageAlt="After"
+                        />
+                    </div>
+                    <div className='carousel-img'>
+                        <ReactCompareImage
+                            leftImage="/images/sheck-before.JPG"
+                            rightImage="/images/sheck-after.png"
                             leftImageAlt="Before"
                             rightImageAlt="After"
                         />
@@ -144,10 +176,10 @@ function Home() {
                     <div className="recent-projects-section">
                         <div className="recent-projects-video">
                             <video
-                                src="/videos/bunny.mp4"
+                                src="/videos/pressa.mp4"
                                 loop
                                 muted
-                                poster="/images/thumbnail1.png"
+                                poster="/images/concert-thumbnail.png"
                                 onClick={openModalConcerts}
                                 style={{ width: '100%', cursor: 'pointer' }}
                             />
@@ -168,7 +200,7 @@ function Home() {
                         >
                             <video
                                 className="modal-video"
-                                src="/videos/bunny.mp4"
+                                src="/videos/pressa.mp4"
                                 controls
                                 autoPlay
                                 style={{ width: '100%' }}
@@ -180,10 +212,10 @@ function Home() {
                     <div className="recent-projects-section">
                         <div className="recent-projects-video">
                             <video
-                                src="/videos/gym.mp4"
+                                src="/videos/basketball.mp4"
                                 loop
                                 muted
-                                poster="/images/thumbnail1.png"
+                                poster="/images/fitness-thumbnail.jpg"
                                 onClick={openModalSports}
                                 style={{ width: '100%', cursor: 'pointer' }}
                             />
@@ -204,7 +236,7 @@ function Home() {
                         >
                             <video
                                 className="modal-video"
-                                src="/videos/gym.mp4"
+                                src="/videos/basketball.mp4"
                                 controls
                                 autoPlay
                                 style={{ width: '100%' }}
@@ -216,10 +248,10 @@ function Home() {
                     <div className="recent-projects-section">
                         <div className="recent-projects-video">
                             <video
-                                src="/videos/weddings.mp4"
+                                src="/videos/wedding.mp4"
                                 loop
                                 muted
-                                poster="/images/thumbnail1.png"
+                                poster="/images/wedding-thumbnail.jpg"
                                 onClick={openModalWeddings}
                                 style={{ width: '100%', cursor: 'pointer' }}
                             />
@@ -240,7 +272,7 @@ function Home() {
                         >
                             <video
                                 className="modal-video"
-                                src="/videos/weddings.mp4"
+                                src="/videos/wedding.mp4"
                                 controls
                                 autoPlay
                                 style={{ width: '100%' }}
