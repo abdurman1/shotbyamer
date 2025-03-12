@@ -71,60 +71,13 @@ function Home() {
                     </div>
                     <div className='carousel-img'>
                         <ReactCompareImage
-                            leftImage="/images/wed-before.jpg"
-                            rightImage="/images/wed-after.jpg"
+                            leftImage="/images/LZB02554-Edit.jpg"
+                            rightImage="/images/LZB02554-Edit (1).jpg"
                             leftImageAlt="Before"
                             rightImageAlt="After"
                         />
                     </div>
-                    <div className='carousel-img'>
-                        <ReactCompareImage
-                            leftImage="/images/50-before.jpg"
-                            rightImage="/images/50-after.jpg"
-                            leftImageAlt="Before"
-                            rightImageAlt="After"
-                        />
-                    </div>
-                    <div className='carousel-img'>
-                        <ReactCompareImage
-                            leftImage="/images/dino-before.jpg"
-                            rightImage="/images/dino-after.jpg"
-                            leftImageAlt="Before"
-                            rightImageAlt="After"
-                        />
-                    </div>
-                    <div className='carousel-img'>
-                        <ReactCompareImage
-                            leftImage="/images/cent-before.jpg"
-                            rightImage="/images/cent-after.jpg"
-                            leftImageAlt="Before"
-                            rightImageAlt="After"
-                        />
-                    </div>
-                    <div className='carousel-img'>
-                        <ReactCompareImage
-                            leftImage="/images/wed2-before.jpg"
-                            rightImage="/images/wed2-after.jpg"
-                            leftImageAlt="Before"
-                            rightImageAlt="After"
-                        />
-                    </div>
-                    <div className='carousel-img'>
-                        <ReactCompareImage
-                            leftImage="/images/shoe-before.jpg"
-                            rightImage="/images/shoe-after.jpg"
-                            leftImageAlt="Before"
-                            rightImageAlt="After"
-                        />
-                    </div>
-                    <div className='carousel-img'>
-                        <ReactCompareImage
-                            leftImage="/images/sheck-before.JPG"
-                            rightImage="/images/sheck-after.png"
-                            leftImageAlt="Before"
-                            rightImageAlt="After"
-                        />
-                    </div>
+                    
                 </Slider>
             </div>
             <div className="zigzag-layout">
